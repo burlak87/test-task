@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors' 
 import mongoose from 'mongoose';
 import router from './router.js';
 import fileUpload from 'express-fileupload';
@@ -12,6 +13,7 @@ const BOT = new TelegramBot(TOKEN, {polling: true})
 
 const app = express();
 
+app.use(cors());
 app.use(express.json())
 app.use(express.static('static'))
 app.use(fileUpload({}))

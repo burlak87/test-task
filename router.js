@@ -10,6 +10,6 @@ app.post('/posts', PostController.create)
 app.put('/posts', PostController.update)
 app.delete('/posts/:id', PostController.delete)
 
-app.post('./notification', NotificationController.sending)
+app.post('/notification', NotificationController.sending)
 
 export default router;
