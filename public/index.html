@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #paperList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+</style>
 <body>
     <main>
         <article id="paperList">
 
         </article>
         <form action="" id="form">
+            <p>Для начала пропишите "/start" Telegram-боту по этой <a href="https://t.me/zaivka_test_bot" target="_blank">ссылке</a></p>
             <input type="text" name="" id="idChat" placeholder="введите id чата">
             <textarea name="" id="txt" placeholder="Текст заявки"></textarea>
             <button type="submit" id="btn">Отправить</button>
         </form>
+        <!-- <form action="" id="form">
+            <input type="text" name="" id="idChat" placeholder="введите id чата">
+            <textarea name="" id="txt" placeholder="Текст заявки"></textarea>
+            <button type="submit" id="btn">Отправить</button>
+        </form> -->
     </main>
 </body>
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
 </html>

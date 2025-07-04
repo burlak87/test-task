@@ -1,15 +1,16 @@
 import Router from 'express'
-import PostController from './PostController.js'
-import NotificationController from './NotificationController.js'
+import PostController from './controller/PostController.js'
+import NotificationController from './controller/NotificationController.js'
 
 const router = new Router()
 
-app.get('/posts', PostController.getAll)
-app.get('/posts/:id', PostController.getOne)
-app.post('/posts', PostController.create)
-app.put('/posts', PostController.update)
-app.delete('/posts/:id', PostController.delete)
+router.get('/posts', PostController.getAll)
+router.get('/posts/:id', PostController.getOne)
+router.post('/posts', PostController.create)
+router.put('/posts', PostController.update)
+router.delete('/posts/:id', PostController.delete)
 
-app.post('/notification', NotificationController.sending)
+router.post('/notification', NotificationController.sending)
 
 export default router;
+// 45.00
